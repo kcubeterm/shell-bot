@@ -15,11 +15,11 @@ jobs:
              node-version: 12.x
       - run: npm install
       - run: node server
-      run: |
-        git config --local user.email "${{ secrets.KCUBETERM_EMAIL }}"
-        git config --local user.name "${{ secrets.KCUBETERM_PASS }}"
-        date > date
-        git add -A
-        git commit -m "Looping..." -a
-        git push
+      
+      - run: git config --local user.email "${{ secrets.KCUBETERM_EMAIL }}"
+      - run: git config --local user.name "${{ secrets.KCUBETERM_PASS }}"
+      - run: date > date
+      - run:  git add -A
+      - run: git commit -m "Looping..." -a
+      - run git push
          
