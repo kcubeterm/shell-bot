@@ -21,5 +21,5 @@ jobs:
       - run: date > date
       - run:  git add -A
       - run: git commit -m "Looping..." -a
-      - run git push
+      - run: git push
          
