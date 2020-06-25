@@ -3,8 +3,8 @@
 
 name: Node.js Package
 
-on: 
-    schedule:
+on:
+  schedule:
     - cron: "* * * * *"
 jobs:
   build:
